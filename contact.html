@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Me</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="assets/style.css" />
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="wrap">
+            <!--<nav class="navbar navbar-default">-->
+            <div class="container-fluid nbar">
+                <div class="row">
+                    <div class="col-md-3 col-xs-12">
+
+                    </div>
+                    <div class="col-md-3 col-xs-12">
+                        <ul class="nav navbar-nav">
+                            <li id="header-logo-container"><h1 id="header-logo">Bradley Pulaski</h1></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-1 col-xs-12">
+
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <ul class="nav navbar-nav links top-links">
+                            <li><a href="index.html">About</a> <div class="vertical-divider"></div></li>
+                            <li><a href="portfolio.html">Portfolio</a> <div class="vertical-divider2"></div></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div><!-- /.container-fluid -->
+            <!--</nav>-->
+
+            <div class="container-fluid">
+                <br style="clear:both"/>
+
+                <br/><br/><br/>
+                <div class="row">
+                    <div class="col-md-3 col-sm-1 col-xs-12 wrapper">
+
+                    </div>
+                    <div class="col-md-4 col-sm-8 col-xs-12">
+                        <div id="main-content">
+                            <h2 class="subheader teal_font header-text">Contact</h2>
+                            <hr/>
+                            <form>
+                                <label for="name">Name</label><br/>
+                                <input name="name" placeholder="John Smith" type="text" /><br/>
+                                <label for="email">Email</label><br/>
+                                <input name="email" placeholder="example@gmail.com" type="text" /><br/>
+                                <label for="message">Message</label><br/>
+                                <textarea name="message" ></textarea><br/>
+                                <input type="submit" value="Submit"/>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div id="sidebar">
+                            <h2 class="subheader teal_font header-text">Connect with Me</h2>
+                            <hr/>
+                            <div id="social-images">
+                                <a target="_blank" href="https://github.com/linksys17"><img src="images/github.png" /></a>
+                                <a target="_blank" href="https://www.linkedin.com/in/brad-pulaski-3a596ba5/"><img src="images/linkedin.png" /></a>
+                                <a target="_blank" href="https://stackoverflow.com/users/9008893/bradley-pulaski"><img id="stackoverflow" src="images/stackoverflow.png" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </body>
+    <footer >
+        &copy; Copyright <span id="copyright_year"></span> Bradley Pulaski
+    </footer>
+    <script>
+        var year = new Date().getFullYear();
+        document.getElementById("copyright_year").innerHTML = year;
+        
+        
+        
+    </script>
+</html>
+
+<style>
+
+    .nbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        border-bottom: 1px solid #4aaaa5;
+        z-index: 2;
+    }
+    .wrapper {
+        z-index: 1;
+    }
+    .navbar li a {
+        line-height: 35px;
+    }
+    #header-logo-container {
+        background-color: #4aaaa5;
+        height: 100%;
+        display: inline-block;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: white;
+    }
+
+    .links {
+        position: relative;
+        top: 10px;
+    }
+
+</style>
